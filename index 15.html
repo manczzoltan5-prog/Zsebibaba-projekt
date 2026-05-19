@@ -27,7 +27,7 @@
             text-align: center;
             margin: 0;
             padding-top: 20px;
-            padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+            padding-bottom: 80px;
             overflow-x: hidden;
             position: relative;
             min-height: 100vh;
@@ -109,7 +109,7 @@
             border-top: 1px solid var(--border-glow);
             backdrop-filter: var(--frosted-blur); -webkit-backdrop-filter: var(--frosted-blur);
             display: flex; justify-content: space-around; align-items: stretch; gap: 2px;
-            padding: 10px 6px max(6px, env(safe-area-inset-bottom, 0px));
+            padding: 10px 6px 6px;
             z-index: 1000; box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.6);
         }
         .navbar a {
@@ -525,7 +525,7 @@
         @media (min-width: 1024px) {
             .card-grid { grid-template-columns: repeat(4, 1fr); gap: 35px 20px; }
             .product-img { height: 220px; }
-            .navbar { gap: 20px; padding: 12px 40px max(8px, env(safe-area-inset-bottom, 0px)); }
+            .navbar { gap: 20px; padding: 12px 40px 8px; }
             .navbar a { flex: 0 1 auto; min-width: 92px; font-size: 12px; gap: 7px; }
             .navbar a .nav-icon { width: 26px; height: 26px; }
         }
